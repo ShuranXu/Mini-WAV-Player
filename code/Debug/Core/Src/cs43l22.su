@@ -1,0 +1,6 @@
+../Core/Src/cs43l22.c:79:13:CS43_write_register	32	static
+../Core/Src/cs43l22.c:96:16:CS43_read_register	32	static
+../Core/Src/cs43l22.c:139:6:CS43_init	16	static
+../Core/Src/cs43l22.c:222:6:CS43_set_volume	16	static
+../Core/Src/cs43l22.c:248:6:CS43_start	16	static
+../Core/Src/cs43l22.c:283:6:CS43_stop	8	static
