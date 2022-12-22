@@ -1,8 +1,8 @@
-# Mini-MP3-Player
+# Mini-WAV-Player
 
 ## Functionality and Brief Description
 
-A STM32-based MP3 player that reads files from a storage device and plays it out through a speaker.
+A STM32-based WAV player that reads files from a storage device and plays it out through a speaker.
 Upon reset, the on-board green LED (LD4) turns on if a USB device is detected through the CN5 connector. When the on-board push button (B1) is pressed, the orange LED (LD3) turns on and a file to be played from the USB is selected based on the song index. This same push button can also be used to pause the song. The orange LED turns off after the file finishes playing and stays OFF until the next or previous song is played. 4 push-buttons have been interfaced externally for volume and song control (volume up/down, song next/previous). These push buttons toggle the blue LED (LD6) each time one of them is pressed. The song data such as the name of the song and current volume are displayed using an LCD. 
 
 The selected song file is read from the USB flash drive and the on-chip DAC (CS43L22) is used for converting the digital audio data into an analog signal that can be output to the speaker. The registers of this Cirrus logic chip are initialized using the I2C  protocol, while the WAV data is sent using the I2S protocol. 
